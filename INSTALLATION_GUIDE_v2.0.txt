@@ -1,0 +1,342 @@
+# Ghost Job Detector v2.0 - Installation & Quick Start Guide
+
+## 🆕 What's New in v2.0
+
+✅ Job age detection with color-coded warnings
+✅ Auto-updates from GhostJobs.io  
+✅ Community ghost job reporting
+✅ Company alias matching
+✅ Dark mode
+✅ Export warning history
+✅ Enhanced UI with severity indicators
+
+---
+
+## Installation Steps
+
+### 1. Extract the Files
+- Download `ghost-job-detector-v2.0.zip`
+- Extract it to a permanent location on your computer
+- Remember this folder location (you'll need it to stay there)
+
+### 2. Open Chrome Extensions
+- Open Google Chrome
+- Type `chrome://extensions/` in the address bar and press Enter
+- OR click menu (⋮) → More tools → Extensions
+
+### 3. Enable Developer Mode
+- Look for "Developer mode" toggle in the top-right corner
+- Turn it ON (it should turn blue)
+
+### 4. Load the Extension
+- Click "Load unpacked" button
+- Navigate to the extracted `ghost-job-detector` folder
+- Select the folder and click "Select Folder" (or "Open")
+
+### 5. Pin the Extension (Recommended)
+- Click the puzzle piece icon in Chrome toolbar
+- Find "Ghost Job Detector" 
+- Click the pin icon to keep it visible
+
+### 6. You're Ready!
+- The extension is now active
+- A ghost icon (👻) should appear in your toolbar
+- Visit any job posting on LinkedIn, Indeed, etc. to test it
+
+---
+
+## Quick Start Guide
+
+### First Time Setup
+
+1. **Click the extension icon** (👻) to open the popup
+2. **Review settings:**
+   - Toggle "Auto-Update Database" (recommended: ON)
+   - Toggle "Dark Mode" if preferred
+3. **Update database:** Click "🔄 Update Database" to get latest data
+4. **Browse jobs:** Visit LinkedIn, Indeed, or other supported sites
+
+### Understanding Warnings
+
+When you see a warning banner:
+
+🚨 **RED/CRITICAL (90+ days old)**
+- Extremely likely to be a ghost job
+- Banner will pulse for attention
+- Proceed with extreme caution
+
+⚠️ **ORANGE/HIGH RISK (30-90 days)**
+- Most real jobs fill within 30 days
+- High probability this is a ghost job
+- Verify before applying
+
+⚡ **YELLOW/CAUTION (14-30 days)**
+- Moderately old posting
+- Could be legitimate but verify
+- Check company website
+
+📅 **BLUE/RECENT (<14 days)**
+- Fresh posting
+- Still on the warning list but recently posted
+- Less likely to be a ghost job
+
+### Reporting Ghost Jobs
+
+Help protect other job seekers:
+
+1. **See the warning banner** on a suspected ghost job
+2. **Click "Report a Ghost Job"** button
+3. **Confirm/edit company name**
+4. **Add details** (optional but helpful):
+   - "Applied 3 months ago, never heard back"
+   - "Job reposted 5 times"
+   - "Position already filled internally"
+5. **Click "Submit Report"**
+
+Your report joins the community database. Companies with 2+ reports get auto-added!
+
+---
+
+## Using the Extension
+
+### Automatic Detection
+- Just browse job sites normally
+- Warnings appear automatically
+- No configuration needed
+
+### Manual Company Management
+Click the extension icon to:
+
+**Add a company:**
+1. Type company name in the input field
+2. Press Enter or click "Add Company"
+
+**Remove a company:**
+1. Find it in the tracked companies list
+2. Click "Remove" button next to it
+
+**Update database:**
+- Click "🔄 Update Database"
+- Fetches latest data from GhostJobs.io
+- Runs automatically every 24 hours if enabled
+
+**Export history:**
+- Click "📥 Export Warning History"
+- Downloads JSON file with all your warnings
+- Includes timestamps, URLs, and job ages
+
+### Settings Panel
+
+**Dark Mode:**
+- Toggle for dark theme in popup
+- Easier on the eyes in low light
+- Persists across sessions
+
+**Auto-Update Database:**
+- When ON: Fetches from GhostJobs.io every 24 hours
+- When OFF: Uses cached data only
+- Recommended: Keep ON
+
+---
+
+## Supported Websites
+
+The extension works on these job sites:
+
+✅ **LinkedIn Jobs** (best support)
+- Company name extraction
+- Job age detection
+- Full warning support
+
+✅ **Indeed**
+- Company name extraction
+- Job age detection
+- Full warning support
+
+✅ **Glassdoor**
+- Company name extraction  
+- Job age detection
+- Full warning support
+
+✅ **ZipRecruiter**
+- Company name extraction
+- Basic support
+
+✅ **Wellfound** (formerly AngelList)
+- Company name extraction
+- Basic support
+
+---
+
+## Tips for Best Results
+
+### Do's ✅
+- Keep auto-update enabled
+- Report ghost jobs you encounter
+- Check job age before applying
+- Verify jobs on company career pages
+- Add companies you personally know post ghost jobs
+- Export history periodically for records
+
+### Don'ts ❌
+- Don't delete the extension folder after installation
+- Don't ignore CRITICAL (90+ day) warnings
+- Don't apply without verifying on old postings
+- Don't assume all warnings mean 100% fake
+  (Use your judgment, but be cautious)
+
+### Red Flags Beyond the Extension
+1. Extremely vague job descriptions
+2. Job title doesn't match description
+3. Unrealistic salary ranges
+4. Same job reposted multiple times
+5. Can't find job on company's career page
+6. Recruiter won't provide specifics
+7. "Always hiring" claims
+
+---
+
+## Troubleshooting
+
+### Warning not showing up?
+
+**Check these:**
+- ✓ Are you on a supported job site?
+- ✓ Is the company in your tracked list? (Check popup)
+- ✓ Try refreshing the page
+- ✓ Check browser console for errors (F12)
+
+**Solution:** The site might use different HTML structure. Report it as an issue!
+
+### Can't find company name?
+
+**Likely causes:**
+- Site has unusual HTML structure
+- Page still loading (wait a few seconds)
+- Company name in unexpected location
+
+**Solution:** You can manually add the company via the popup.
+
+### Extension icon not visible?
+
+**Solution:** 
+- Click puzzle piece icon in Chrome toolbar
+- Find "Ghost Job Detector"
+- Click pin icon
+
+### Auto-update not working?
+
+**Check:**
+- Is auto-update toggle ON in settings?
+- Check "Last Updated" in popup stats
+- Manual update always works via button
+
+### Dark mode not applying?
+
+**Solution:**
+- Close and reopen the popup
+- Check that toggle is ON
+- Try disabling and re-enabling
+
+---
+
+## Privacy & Security
+
+✅ **No data collection** - We don't track you
+✅ **No analytics** - Zero tracking cookies or scripts  
+✅ **Local storage only** - Everything stays on your device
+✅ **Open source** - Inspect the code yourself
+✅ **Minimal permissions** - Only what's needed
+
+The extension only connects to GhostJobs.io (if auto-update is enabled), and that's purely to fetch company data.
+
+---
+
+## Keyboard Shortcuts
+
+In the popup:
+- **Enter** - Add company (when typing in input field)
+- **Escape** - Close popup
+
+On warning banner:
+- **Click X** - Dismiss warning
+
+In report dialog:
+- **Enter** - Submit report (when focused)
+- **Escape** - Cancel report
+
+---
+
+## Uninstall
+
+To remove the extension:
+1. Go to `chrome://extensions/`
+2. Find "Ghost Job Detector"
+3. Click "Remove"
+
+Your data (warnings, companies) will be deleted. Consider exporting history first if you want to keep it!
+
+---
+
+## Upgrading from v1.0
+
+If you had the old version:
+1. Export your history first (if you want to keep it)
+2. Note any manually added companies
+3. Remove old version
+4. Install v2.0
+5. Re-add your custom companies (if needed)
+
+Your warning count should persist if upgrading in place.
+
+---
+
+## Need Help?
+
+### Resources
+- 📖 Full documentation: See README.md in the extension folder
+- 🌐 GhostJobs.io: https://ghostjobs.io/
+- 💬 Reddit: r/jobs, r/antiwork, r/JobSearchHacks
+
+### Common Questions
+
+**Q: Is this extension free?**
+A: Yes, completely free and open source.
+
+**Q: Does it work on mobile?**
+A: Not yet. Chrome extensions don't work on mobile Chrome.
+
+**Q: Can I use it on other browsers?**
+A: Currently Chrome only. Firefox/Edge support is planned.
+
+**Q: How accurate is the data?**
+A: Based on community reports and GhostJobs.io. Not 100% but highly valuable.
+
+**Q: Will this hurt my job search?**
+A: No! It helps you focus on real opportunities and avoid wasting time.
+
+---
+
+## Success Stories
+
+The extension helps you:
+- **Avoid dead ends** - Don't waste time on fake postings
+- **Spot patterns** - See which companies are serial offenders  
+- **Make informed decisions** - Job age data is crucial
+- **Help others** - Your reports protect the community
+
+---
+
+## Final Tips
+
+1. **Trust but verify** - Extension warns, but always verify independently
+2. **Stay updated** - Keep auto-update ON for best results
+3. **Report ghost jobs** - Help build the database
+4. **Check job age** - 30+ days is a huge red flag
+5. **Network directly** - Best way to bypass ghost jobs entirely
+
+---
+
+**Happy (and safe) job hunting! 👻🚫**
+
+**Version 2.0 | November 2025**
