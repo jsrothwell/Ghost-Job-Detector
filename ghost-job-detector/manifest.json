@@ -1,26 +1,22 @@
 {
   "manifest_version": 3,
   "name": "Ghost Job Detector",
-  "version": "1.0.0",
-  "description": "Warns you when viewing job postings from companies known to post ghost jobs",
+  "version": "1.0.2",
+  "description": "Warns you when viewing job postings from companies known to post ghost jobs.",
   "permissions": ["storage", "activeTab", "alarms"],
   "host_permissions": [
     "https://www.linkedin.com/*",
     "https://*.linkedin.com/*",
-
     "https://www.indeed.com/*",
     "https://*.indeed.com/*",
     "https://www.indeed.ca/*",
     "https://*.indeed.ca/*",
-
     "https://www.glassdoor.com/*",
     "https://*.glassdoor.com/*",
     "https://www.glassdoor.ca/*",
     "https://*.glassdoor.ca/*",
-
     "https://www.ziprecruiter.com/*",
     "https://*.ziprecruiter.com/*",
-
     "https://wellfound.com/*",
     "https://*.wellfound.com/*",
     "https://ghostjobs.io/*"
@@ -30,7 +26,6 @@
       "matches": [
         "https://www.linkedin.com/jobs/*",
         "https://*.linkedin.com/jobs/*",
-
         "https://www.indeed.com/viewjob*",
         "https://www.indeed.com/jobs/*",
         "https://*.indeed.com/viewjob*",
@@ -40,7 +35,6 @@
         "https://www.indeed.ca/jobs/*",
         "https://*.indeed.ca/viewjob*",
         "https://*.indeed.ca/jobs/*",
-
         "https://www.glassdoor.com/job-listing/*",
         "https://www.glassdoor.com/Job/*",
         "https://*.glassdoor.com/job-listing/*",
@@ -49,12 +43,10 @@
         "https://www.glassdoor.ca/Job/*",
         "https://*.glassdoor.ca/job-listing/*",
         "https://*.glassdoor.ca/Job/*",
-
         "https://www.ziprecruiter.com/c/*",
         "https://www.ziprecruiter.com/jobs/*",
         "https://*.ziprecruiter.com/c/*",
         "https://*.ziprecruiter.com/jobs/*",
-
         "https://wellfound.com/jobs/*",
         "https://*.wellfound.com/jobs/*"
       ],
@@ -64,7 +56,7 @@
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "action": {
     "default_popup": "popup.html",
@@ -82,7 +74,11 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "ghost-job-detector@jamie.example",
-      "strict_min_version": "109.0"
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "collects": false,
+        "required": ["none"]
+      }
     }
   }
 }
