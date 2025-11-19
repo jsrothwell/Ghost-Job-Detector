@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost Job Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 15px;
+      width: 260px;
+      background: #ffffff;
+      color: #000000;
+      transition: background 0.3s, color 0.3s;
+    }
+    h1 { font-size: 16px; margin-bottom: 10px; }
+    .toggle { display: flex; align-items: center; margin-bottom: 10px; }
+    .toggle input { margin-right: 8px; }
+    .section { margin-top: 15px; border-top: 1px solid #ccc; padding-top: 10px; }
+    body.dark-mode { background: #1e1e1e; color: #f0f0f0; }
+    body.dark-mode h1 { color: #f0f0f0; }
+    body.dark-mode .section { border-top: 1px solid #555; }
+    button { padding: 6px 10px; }
+    body.dark-mode button { background: #333; color: #f0f0f0; border: 1px solid #555; }
+    body.dark-mode button:hover { background: #444; }
+  </style>
+</head>
+<body>
+  <h1>Ghost Job Detector</h1>
+
+  <div class="toggle">
+    <input type="checkbox" id="darkModeToggle">
+    <label for="darkModeToggle">Enable Dark Mode</label>
+  </div>
+
+  <div class="toggle">
+    <input type="checkbox" id="positiveIndicatorToggle">
+    <label for="positiveIndicatorToggle">Show Positive Indicator</label>
+  </div>
+
+  <div class="section">
+    <button id="updateListBtn">Update Ghost Job List</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
